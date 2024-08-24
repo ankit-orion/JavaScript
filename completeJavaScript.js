@@ -327,3 +327,27 @@
 
 // oop IN JAVA SCRIPT
 // here we will be learning about classees and objets in the javascript
+// class is a blueprint for creating objects
+// class is a template for creating objects
+// class is a reference data type
+// class is a user defined data type
+// does javascript have classes? - no, javascript does not have classes
+// javascript has objects
+// we dont have classes in javascript but we have prototypes in jacascript
+// it is just a programming style or a way to write code
+// OOP -> it is a programming paradigm based on the concept of objects
+// objects are collections of properties and methods that have a particular behaviour
+// constructor function - it is a special function that is used to create objects
+const user = {
+    name: "Ankit",
+    age: 22,
+    email: "ankit@mail.com",
+    getEmailId: function(){
+        return this.email;
+        // prefer using backticks here (`$ place the value here to use later `)
+        // here it is used for tyhe current context of the email
+    }
+}
+// console.log(user);
+console.log(user.getEmailId());
+
