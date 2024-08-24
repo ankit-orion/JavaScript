@@ -338,18 +338,18 @@
 // OOP -> it is a programming paradigm based on the concept of objects
 // objects are collections of properties and methods that have a particular behaviour
 // constructor function - it is a special function that is used to create objects
-const user = {
-    name: "Ankit",
-    age: 22,
-    email: "ankit@mail.com",
-    getEmailId: function(){
-        return this.email;
+// const user = {
+//     name: "Ankit",
+//     age: 22,
+//     email: "ankit@mail.com",
+//     getEmailId: function(){
+//         return this.email;
         // prefer using backticks here (`$ place the value here to use later `)
         // here it is used for tyhe current context of the email
-    }
-}
+//     }
+// }
 // console.log(user);
-console.log(user.getEmailId());
+// console.log(user.getEmailId());
 
 // here we have created user now suppose we want to create user2 we have to rewrite this code
 // again that is why we use constructor functions
@@ -360,17 +360,30 @@ console.log(user.getEmailId());
 // const promiseOne = new Promise(function(resolve, reject)
 // new keyword is used to create a new object it is a constructor function
 
-function User(username, loginCount, isLoggedIn){
+// function User(username, loginCount, isLoggedIn){
     // left side username is our property and right side username is the value that we are passing
-    this.username = username;
-    this.loginCount = loginCount;
-    this.isLoggedIn = isLoggedIn;
+    // this.username = username;
+    // this.loginCount = loginCount;
+    // this.isLoggedIn = isLoggedIn;
 
-    return this;
-}
+    // this.greetings = function(name){
+    //     return `Hello ${name} your username is ${this.username}`;
+    // }
+    // return this is not necessary in the constructor function it does returns it by default
+    // return this;
+// }
 // here new will create a new object and the constructor function will be called
-const userOne = new User("ankit", 12, true);
-const userTwo = new User("mohit", 12, true);
-console.log(userTwo);
+// new will create an empty object and then it will call the constructor function and then it will return the object
+
+// const userOne = new User("ankit", 12, true);
+// const userTwo = new User("mohit", 12, true);
+// console.log(userOne.greetings("Ankit"));
 // console.log(userOne);
 // console.log(userTwo);
+// console.log(userOne);
+// console.log(userTwo);
+
+//Prototype in javascript
+// prototype is a property of a javascript object
+// prototype is an object itself
+// prototype is a parent object of the object
