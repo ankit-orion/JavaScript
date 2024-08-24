@@ -351,3 +351,26 @@ const user = {
 // console.log(user);
 console.log(user.getEmailId());
 
+// here we have created user now suppose we want to create user2 we have to rewrite this code
+// again that is why we use constructor functions
+// constructor function - it is a special function that is used to create objects
+
+// constructor function
+
+// const promiseOne = new Promise(function(resolve, reject)
+// new keyword is used to create a new object it is a constructor function
+
+function User(username, loginCount, isLoggedIn){
+    // left side username is our property and right side username is the value that we are passing
+    this.username = username;
+    this.loginCount = loginCount;
+    this.isLoggedIn = isLoggedIn;
+
+    return this;
+}
+// here new will create a new object and the constructor function will be called
+const userOne = new User("ankit", 12, true);
+const userTwo = new User("mohit", 12, true);
+console.log(userTwo);
+// console.log(userOne);
+// console.log(userTwo);
