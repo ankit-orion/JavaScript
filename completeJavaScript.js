@@ -315,7 +315,7 @@
 // .then((res)=>{
 //     return res.json();
 // })
-// .then((data)=>{
+// .then((data)=>
 //     console.log(data);
 // })
 // .catch((err)=>{
@@ -324,3 +324,6 @@
 // .finally(()=>{
 //     console.log("data fetched");
 // })
+
+// oop IN JAVA SCRIPT
+// here we will be learning about classees and objets in the javascript
