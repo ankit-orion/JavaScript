@@ -387,3 +387,73 @@
 // prototype is a property of a javascript object
 // prototype is an object itself
 // prototype is a parent object of the object
+// Array -> obejct -> null (prototype chain)
+// prototype is a property of a javascript object
+ 
+
+// learning objects
+// function multiplyByfive(name)
+
+// classes in javascript
+// class User{
+//     constructor(username, email, age, password){
+//         this.username = username;
+//         this.email = email;
+//         this.age = age;
+//         this.password = password;
+//     }
+    
+//     encrpytPassword(){
+//         return `${this.password}abc`;
+//     }
+//     toUpperCaseUsername(){
+//         return this.username.toUpperCase();
+//     }
+// }
+// const chai = new User("Ankit", "ankit@mail.com", 22, "123456");
+// console.log(chai.encrpytPassword());
+// console.log(chai.toUpperCaseUsername());
+
+// behind the scence
+// here we can do the same thing with the prototype
+// function user(username, email, age, password){
+//     this.username = username;
+//     this.email = email;
+//     this.age = age;
+//     this.password = password;
+// }
+
+// user.prototype.encrpytPassword = function(){
+//     return `${this.password}abc`;
+// }
+// user.prototype.toUpperCaseUsername = function(){
+//     return this.username.toUpperCase();
+// }
+// const user1 = new user("Ankit", "ankit@mail.com", 22, "rahul");
+// console.log(user1.encrpytPassword());
+// console.log(user1.toUpperCaseUsername());
+
+// class User{
+//     constructor(username, email, age, password){
+//         this.username = username;
+//         this.email = email;
+//         this.age = age;
+//         this.password = password;
+//     }
+//     logCurrentUser(){
+//         console.log(`Current user is ${this.username}`);
+//         console.log(`Current user email is ${this.email}`);
+//         console.log(`Current user age is ${this.age}`);
+//         console.log(`Current user password is ${this.password}`);
+//     }
+// }
+// now suppose we have to create another which should the current user
+//meaning it should have all the properties of the user class
+// class Teacher extends User{
+//     constructor(username, email, password){
+//         super(username);
+//         this.email = email;
+//         this.username = username;
+//         this.password = password;
+//     }
+// }
